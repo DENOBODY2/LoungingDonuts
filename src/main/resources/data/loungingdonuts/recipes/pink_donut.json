@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xyx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:wheat"
+    },
+    "y": {
+      "item": "minecraft:egg"
+    }
+  },
+  "result": {
+    "item": "loungingdonuts:pink_donut",
+    "count": 1
+  }
+}

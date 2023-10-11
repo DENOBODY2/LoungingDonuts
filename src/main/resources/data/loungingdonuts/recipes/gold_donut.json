@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xyx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:gold_ingot"
+    },
+    "y": {
+      "item": "loungingdonuts:pink_donut"
+    }
+  },
+  "result": {
+    "item": "loungingdonuts:gold_donut",
+    "count": 1
+  }
+}
