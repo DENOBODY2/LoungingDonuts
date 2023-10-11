@@ -1,6 +1,7 @@
 package net.denobody2.loungingdonuts;
 
 import com.mojang.logging.LogUtils;
+import net.denobody2.loungingdonuts.registry.ModBlocks;
 import net.denobody2.loungingdonuts.registry.ModCreativeTabs;
 import net.denobody2.loungingdonuts.registry.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,7 @@ public class LoungingDonuts
         modEventBus.addListener(this::commonSetup);
         ModItems.ITEMS.register(modEventBus);
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

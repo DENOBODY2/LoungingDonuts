@@ -3,5 +3,6 @@
   "item.loungingdonuts.blue_donut": "Meg Donut",
   "item.loungingdonuts.gold_donut": "Golden Donut",
   "item.loungingdonuts.enchanted_gold_donut": "Enchanted Golden Donut",
-  "itemGroup.loungingdonuts": "Lounging Donuts"
+  "itemGroup.loungingdonuts": "Lounging Donuts",
+  "block.loungingdonuts.donut_ore": "Donut Ore"
 }
