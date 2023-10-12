@@ -1,0 +1,38 @@
+{
+  "parent": "loungingdonuts:loungingdonuts",
+  "criteria": {
+    "has_blue_donut": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:blue_donut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Tastes like hair dye."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "loungingdonuts:blue_donut"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Donut #2: Noriaki Kakyoin"
+    }
+  },
+  "requirements": [
+    [
+      "has_blue_donut"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

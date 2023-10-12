@@ -1,0 +1,38 @@
+{
+  "parent": "loungingdonuts:blue_donut_acquire",
+  "criteria": {
+    "has_gold_donut": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:gold_donut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Tastes like rocks."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "loungingdonuts:gold_donut"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Donut #3: Kyōjurō Rengoku"
+    }
+  },
+  "requirements": [
+    [
+      "has_gold_donut"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

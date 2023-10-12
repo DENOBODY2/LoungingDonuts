@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_donut_pink": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:pink_donut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "loungingdonuts:textures/block/donut_ore.png",
+    "description": {
+      "text": "mmm.... donuts"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "loungingdonuts:pink_donut"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Donut #1: Portgas D. Ace"
+    }
+  },
+  "requirements": [
+    [
+      "has_donut_pink"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

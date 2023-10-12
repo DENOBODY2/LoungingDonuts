@@ -1,0 +1,38 @@
+{
+  "parent": "loungingdonuts:gold_donut_acquire",
+  "criteria": {
+    "has_god_donut": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:enchanted_gold_donut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Meg, why so many donuts?."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "loungingdonuts:enchanted_gold_donut"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Donut #4: King Piccolo"
+    }
+  },
+  "requirements": [
+    [
+      "has_god_donut"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
