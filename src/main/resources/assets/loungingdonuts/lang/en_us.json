@@ -4,5 +4,7 @@
   "item.loungingdonuts.gold_donut": "Golden Donut",
   "item.loungingdonuts.enchanted_gold_donut": "Enchanted Golden Donut",
   "itemGroup.loungingdonuts": "Lounging Donuts",
-  "block.loungingdonuts.donut_ore": "Donut Ore"
+  "block.loungingdonuts.donut_ore": "Donut Ore",
+  "pack.loungingdonuts.realistic_donuts.title": "Realistic Donuts",
+  "pack.loungingdonuts.realistic_donuts.description": "For Cody"
 }
