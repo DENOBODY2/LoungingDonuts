@@ -1,0 +1,38 @@
+{
+  "parent": "loungingdonuts:amethyst_donut_acquire",
+  "criteria": {
+    "has_deep_donut": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:enchanted_amethyst_donut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Tastes like the essence of the deep. Lost souls resonate within this shiny rock. Holding it to your ear, you can hear a faint song telling of a joyous wonder: The Donut of Life. Acquire an enchanted amethyst donut."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "loungingdonuts:enchanted_amethyst_donut"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Donut of the Deep"
+    }
+  },
+  "requirements": [
+    [
+      "has_deep_donut"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

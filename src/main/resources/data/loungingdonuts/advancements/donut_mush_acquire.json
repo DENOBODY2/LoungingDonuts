@@ -1,0 +1,38 @@
+{
+  "parent": "loungingdonuts:loungingdonuts",
+  "criteria": {
+    "has_donut_mush": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:donut_mush"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "The building blocks of donut civilization are in your grasp. Obtain some donut mush from a donut blob."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "loungingdonuts:donut_mush"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Mush Master"
+    }
+  },
+  "requirements": [
+    [
+      "has_donut_mush"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -17,7 +17,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Tastes like rocks."
+      "text": "Tastes like rocks. Obtain a golden donut."
     },
     "frame": "task",
     "hidden": false,
@@ -26,7 +26,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Donut #3: Kyōjurō Rengoku"
+      "text": "Portgas D. Ace Special"
     }
   },
   "requirements": [

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:allows_tropical_fish_spawns_at_any_height",
+  "features": "loungingdonuts:deepslate_donut_ore_placed",
+  "step": "underground_ores"
+}

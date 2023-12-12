@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "loungingdonuts:block/compressed_green_donut"
+  }
+}

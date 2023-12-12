@@ -17,7 +17,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Meg, why so many donuts?."
+      "text": "Tastes like holy rocks. Looking at it, you can see worn text telling of a great evil: The Donut of Death. Obtain an enchanted golden donut."
     },
     "frame": "task",
     "hidden": true,
@@ -26,7 +26,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Donut #4: King Piccolo"
+      "text": "The Blessed Donut"
     }
   },
   "requirements": [

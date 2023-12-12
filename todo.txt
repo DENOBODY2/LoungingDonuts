@@ -1,0 +1,3 @@
+1. Add textures for everything
+2. Animate mob
+3. code mob

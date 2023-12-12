@@ -5,6 +5,41 @@
   "item.loungingdonuts.enchanted_gold_donut": "Enchanted Golden Donut",
   "itemGroup.loungingdonuts": "Lounging Donuts",
   "block.loungingdonuts.donut_ore": "Donut Ore",
+  "block.loungingdonuts.pink_donut_block": "Block of Pink Donut",
+  "block.loungingdonuts.blue_donut_block": "Block of Blue Donut",
+  "block.loungingdonuts.gold_donut_block": "Block of Gold Donut",
+
   "pack.loungingdonuts.realistic_donuts.title": "Realistic Donuts",
-  "pack.loungingdonuts.realistic_donuts.description": "For Cody"
+  "pack.loungingdonuts.realistic_donuts.description": "For Cody",
+
+  "item.loungingdonuts.green_donut": "Green Donut",
+  "item.loungingdonuts.black_donut": "Charcoal Donut",
+  "item.loungingdonuts.amethyst_donut": "Amethyst Donut",
+  "item.loungingdonuts.enchanted_amethyst_donut": "Enchanted Amethyst Donut",
+  "block.loungingdonuts.deepslate_donut_ore": "Deepslate Donut Ore",
+  "block.loungingdonuts.green_donut_block": "Block of Green Donut",
+  "block.loungingdonuts.black_donut_block": "Block of Black Donut",
+  "block.loungingdonuts.amethyst_donut_block": "Block of Amethyst Donut",
+
+
+  "item.loungingdonuts.donut_mush": "Donut Mush",
+  "item.loungingdonuts.donut_ingot": "Donut Ingot",
+  "item.loungingdonuts.donut_knife": "Dormant Donut Knife",
+
+  "entity.loungingdonuts.donut_blob": "Donut Blob",
+  "item.loungingdonuts.donut_blob_spawn_egg": "Donut Blob Spawn Egg",
+
+  "block.loungingdonuts.donut_batter": "Donut Batter",
+  "block.loungingdonuts.donut_batter_bricks": "Donut Batter Bricks",
+  "block.loungingdonuts.donut_batter_brick_slab": "Donut Batter Brick Slab",
+  "block.loungingdonuts.donut_batter_brick_stairs": "Donut Batter Brick Stairs",
+  "block.loungingdonuts.donut_batter_brick_wall": "Donut Batter Brick Wall",
+  "block.loungingdonuts.donut_batter_tiles": "Donut Batter Tiles",
+  "block.loungingdonuts.donut_batter_tile_slab": "Donut Batter Tile Slab",
+  "block.loungingdonuts.donut_batter_tile_stairs": "Donut Batter Tile Stairs",
+  "block.loungingdonuts.donut_batter_tile_wall": "Donut Batter Tile Wall",
+  "block.loungingdonuts.polished_donut_batter": "Polished Donut Batter",
+  "block.loungingdonuts.polished_donut_batter_slab": "Polished Donut Batter Slab",
+  "block.loungingdonuts.polished_donut_batter_stairs": "Polished Donut Batter Stairs",
+  "block.loungingdonuts.polished_donut_batter_wall": "Polished Donut Batter Wall"
 }

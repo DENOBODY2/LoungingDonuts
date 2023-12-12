@@ -1,0 +1,27 @@
+{
+  "feature": "loungingdonuts:deepslate_donut_geode",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 55
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "absolute": -10
+        },
+        "min_inclusive": {
+          "above_bottom": -30
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

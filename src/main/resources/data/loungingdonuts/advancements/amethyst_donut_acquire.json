@@ -1,0 +1,38 @@
+{
+  "parent": "loungingdonuts:black_donut_acquire",
+  "criteria": {
+    "has_amethyst_donut": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:amethyst_donut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Tastes like musical rocks. Obtain an amethyst donut."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "loungingdonuts:amethyst_donut"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Donut Zeppelin: Donut's Last Stand"
+    }
+  },
+  "requirements": [
+    [
+      "has_amethyst_donut"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

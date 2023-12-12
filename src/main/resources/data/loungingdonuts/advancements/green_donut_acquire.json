@@ -1,0 +1,38 @@
+{
+  "parent": "loungingdonuts:loungingdonuts",
+  "criteria": {
+    "has_green_donut": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:green_donut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Tastes like slime."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "loungingdonuts:green_donut"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Lord of the Goop: The Return of the Goop"
+    }
+  },
+  "requirements": [
+    [
+      "has_green_donut"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

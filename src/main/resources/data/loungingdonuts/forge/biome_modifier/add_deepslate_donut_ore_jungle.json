@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": "loungingdonuts:deepslate_donut_ore_placed",
+  "step": "underground_ores"
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "loungingdonuts:donut_mush"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "loungingdonuts:donut_mush"
+    },
+    {
+      "item": "loungingdonuts:donut_mush"
+    },
+    {
+      "item": "loungingdonuts:donut_mush"
+    }
+  ],
+  "result": {
+    "item": "loungingdonuts:donut_ingot"
+  }
+}

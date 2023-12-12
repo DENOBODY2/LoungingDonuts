@@ -3,8 +3,10 @@ package net.denobody2.loungingdonuts;
 import com.mojang.logging.LogUtils;
 import net.denobody2.loungingdonuts.registry.ModBlocks;
 import net.denobody2.loungingdonuts.registry.ModCreativeTabs;
+import net.denobody2.loungingdonuts.registry.ModEntities;
 import net.denobody2.loungingdonuts.registry.ModItems;
 import net.minecraft.SharedConstants;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.PathPackResources;
@@ -24,6 +26,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.resource.DelegatingPackResources;
 import org.slf4j.Logger;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+
 
 import java.nio.file.Path;
 import java.util.List;
@@ -49,6 +53,7 @@ public class LoungingDonuts
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         modEventBus.addListener(this::packSetup);
+        ModEntities.ENTITY_TYPES.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

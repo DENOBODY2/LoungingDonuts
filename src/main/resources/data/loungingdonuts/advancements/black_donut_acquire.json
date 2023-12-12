@@ -1,0 +1,38 @@
+{
+  "parent": "loungingdonuts:green_donut_acquire",
+  "criteria": {
+    "has_black_donut": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:black_donut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Tastes like charcoal. Obtain a black donut."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "loungingdonuts:black_donut"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Donutallica: Master of Donuts"
+    }
+  },
+  "requirements": [
+    [
+      "has_black_donut"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

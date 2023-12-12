@@ -3,9 +3,9 @@ package net.denobody2.loungingdonuts.common.item;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class EnchantedGoldenDonutItem extends Item {
+public class EnchantedDonutItem extends Item {
 
-    public EnchantedGoldenDonutItem(Properties pProperties) {
+    public EnchantedDonutItem(Properties pProperties) {
         super(pProperties);
     }
 

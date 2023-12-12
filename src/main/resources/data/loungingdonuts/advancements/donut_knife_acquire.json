@@ -1,0 +1,38 @@
+{
+  "parent": "loungingdonuts:donut_ingot_acquire",
+  "criteria": {
+    "has_donut_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:donut_knife"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Acquire a dormant donut blade. While this weapon has not reached its full potential yet, perhaps there is a way to awaken its secrets. Obtain a donut knife."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "loungingdonuts:donut_knife"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Sweet's Bane"
+    }
+  },
+  "requirements": [
+    [
+      "has_donut_knife"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

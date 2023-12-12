@@ -1,0 +1,21 @@
+{
+  "structures": [
+    {
+      "structure": "loungingdonuts:donut_ruins_rare",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "salt": 174378431,
+
+
+    "spacing": 20,
+
+
+    "separation": 11,
+
+
+    "type": "minecraft:random_spread"
+  }
+}

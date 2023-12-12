@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:has_structure/ancient_city",
+  "features": "loungingdonuts:deepslate_donut_ore_placed",
+  "step": "underground_ores"
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "loungingdonuts:gold_donut_acquire",
+  "criteria": {
+    "has_gold_donut_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "loungingdonuts:gold_donut_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Everything's better when it's a cube! Compress nine golden donuts into a single block."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "loungingdonuts:gold_donut_block"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Compact Riches"
+    }
+  },
+  "requirements": [
+    [
+      "has_gold_donut_block"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

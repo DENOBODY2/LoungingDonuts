@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " x ",
+    " x ",
+    " b "
+  ],
+  "key": {
+    "x": {
+      "item": "loungingdonuts:donut_ingot"
+    },
+    "b": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "loungingdonuts:donut_knife"
+  }
+}
