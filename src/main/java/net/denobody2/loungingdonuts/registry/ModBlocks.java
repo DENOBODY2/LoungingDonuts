@@ -5,10 +5,7 @@ import net.denobody2.loungingdonuts.common.item.ModFuelBlockItem;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -60,33 +57,33 @@ public class ModBlocks {
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()));
     //slab
-    public static final RegistryObject<Block> DONUT_BATTER_BRICK_SLAB = registerBlock("donut_batter_brick_slab", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)
+    public static final RegistryObject<Block> DONUT_BATTER_BRICK_SLAB = registerBlock("donut_batter_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> DONUT_BATTER_TILE_SLAB = registerBlock("donut_batter_tile_slab", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB)
+    public static final RegistryObject<Block> DONUT_BATTER_TILE_SLAB = registerBlock("donut_batter_tile_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB)
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> POLISHED_DONUT_BATTER_SLAB = registerBlock("polished_donut_batter_slab", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB)
+    public static final RegistryObject<Block> POLISHED_DONUT_BATTER_SLAB = registerBlock("polished_donut_batter_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB)
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()));
     //stair
-    public static final RegistryObject<Block> DONUT_BATTER_BRICK_STAIRS = registerBlock("donut_batter_brick_stairs", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)
+    public static final RegistryObject<Block> DONUT_BATTER_BRICK_STAIRS = registerBlock("donut_batter_brick_stairs", () -> new StairBlock(ModBlocks.DONUT_BATTER_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> DONUT_BATTER_TILE_STAIRS = registerBlock("donut_batter_tile_stairs", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)
+    public static final RegistryObject<Block> DONUT_BATTER_TILE_STAIRS = registerBlock("donut_batter_tile_stairs", () -> new StairBlock(ModBlocks.DONUT_BATTER_TILES.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> POLISHED_DONUT_BATTER_STAIRS = registerBlock("polished_donut_batter_stairs", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)
+    public static final RegistryObject<Block> POLISHED_DONUT_BATTER_STAIRS = registerBlock("polished_donut_batter_stairs", () -> new StairBlock(ModBlocks.POLISHED_DONUT_BATTER.get().defaultBlockState(),BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()));
     //wall
-    public static final RegistryObject<Block> DONUT_BATTER_BRICK_WALL = registerBlock("donut_batter_brick_wall", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL)
+    public static final RegistryObject<Block> DONUT_BATTER_BRICK_WALL = registerBlock("donut_batter_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL)
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> DONUT_BATTER_TILE_WALL = registerBlock("donut_batter_tile_wall", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL)
+    public static final RegistryObject<Block> DONUT_BATTER_TILE_WALL = registerBlock("donut_batter_tile_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL)
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> POLISHED_DONUT_BATTER_WALL = registerBlock("polished_donut_batter_wall", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL)
+    public static final RegistryObject<Block> POLISHED_DONUT_BATTER_WALL = registerBlock("polished_donut_batter_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL)
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()));
 

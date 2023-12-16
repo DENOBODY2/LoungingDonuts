@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "loungingdonuts:block/donut_batter_bricks",
+    "side": "loungingdonuts:block/donut_batter_bricks",
+    "top": "loungingdonuts:block/donut_batter_bricks"
+  }
+}

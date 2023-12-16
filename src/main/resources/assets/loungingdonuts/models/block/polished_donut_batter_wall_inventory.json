@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "loungingdonuts:block/polished_donut_batter"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "loungingdonuts:block/polished_donut_batter_slab"
+    },
+    "type=double": {
+      "model": "loungingdonuts:block/polished_donut_batter"
+    },
+    "type=top": {
+      "model": "loungingdonuts:block/polished_donut_batter_slab_top"
+    }
+  }
+}

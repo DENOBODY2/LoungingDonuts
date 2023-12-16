@@ -1,10 +1,7 @@
 package net.denobody2.loungingdonuts;
 
 import com.mojang.logging.LogUtils;
-import net.denobody2.loungingdonuts.registry.ModBlocks;
-import net.denobody2.loungingdonuts.registry.ModCreativeTabs;
-import net.denobody2.loungingdonuts.registry.ModEntities;
-import net.denobody2.loungingdonuts.registry.ModItems;
+import net.denobody2.loungingdonuts.registry.*;
 import net.minecraft.SharedConstants;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.network.chat.Component;
@@ -54,6 +51,7 @@ public class LoungingDonuts
         ModBlocks.BLOCKS.register(modEventBus);
         modEventBus.addListener(this::packSetup);
         ModEntities.ENTITY_TYPES.register(modEventBus);
+        ModPaintings.PAINTING_VARIANT_DEFERRED_REGISTER.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

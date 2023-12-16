@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "loungingdonuts:block/donut_batter_tiles",
+    "side": "loungingdonuts:block/donut_batter_tiles",
+    "top": "loungingdonuts:block/donut_batter_tiles"
+  }
+}

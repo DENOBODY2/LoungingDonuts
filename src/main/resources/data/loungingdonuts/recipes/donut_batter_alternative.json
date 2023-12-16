@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:clay_ball"
+    },
+    "x": {
+      "tag": "loungingdonuts:donuts"
+    }
+  },
+  "pattern": [
+    "x#",
+    "#x"
+  ],
+  "result": {
+    "count": 4,
+    "item": "loungingdonuts:donut_batter"
+  },
+  "show_notification": true
+}
