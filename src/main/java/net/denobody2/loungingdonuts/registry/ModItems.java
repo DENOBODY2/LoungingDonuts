@@ -44,6 +44,8 @@ public class ModItems {
     public static final RegistryObject<Item> DONUT_KNIFE = ITEMS.register("donut_knife",
             ()-> new DonutKnifeItem(ModToolTiers.DONUT, 3, -2.0f,
                     new Item.Properties().rarity(Rarity.RARE).fireResistant()));
+    public static final RegistryObject<Item> DONUT_SHIELD = ITEMS.register("donut_shield",
+            () -> new DonutShieldItem(new Item.Properties().durability(500)));
     //nether donuts
     /*public static final RegistryObject<Item> RED_DONUT = ITEMS.register("red_donut",
             ()-> new Item(new Item.Properties().food(ModFoodProperties.RED_DONUT).stacksTo(64).rarity(Rarity.COMMON)));

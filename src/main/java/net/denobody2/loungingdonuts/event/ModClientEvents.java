@@ -5,6 +5,7 @@ import net.denobody2.loungingdonuts.client.geo.ModSimpleGeoModel;
 import net.denobody2.loungingdonuts.client.geo.ModSimpleGeoRenderer;
 import net.denobody2.loungingdonuts.client.renderer.DonutBlobRenderer;
 import net.denobody2.loungingdonuts.registry.ModEntities;
+import net.denobody2.loungingdonuts.registry.ModItemProperties;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
@@ -19,6 +20,7 @@ public class ModClientEvents {
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent e) {
         EntityRenderers.register(ModEntities.DONUT_BLOB.get(), DonutBlobRenderer::new);
+        ModItemProperties.addCustomItemProperties();
 
     }
     @SubscribeEvent

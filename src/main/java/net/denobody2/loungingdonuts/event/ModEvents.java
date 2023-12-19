@@ -3,13 +3,19 @@ package net.denobody2.loungingdonuts.event;
 import net.denobody2.loungingdonuts.LoungingDonuts;
 import net.denobody2.loungingdonuts.common.entity.DonutBlob;
 import net.denobody2.loungingdonuts.registry.ModEntities;
+import net.denobody2.loungingdonuts.registry.ModItems;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Slime;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.SpawnPlacementRegisterEvent;
+import net.minecraftforge.event.entity.living.ShieldBlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -24,4 +30,5 @@ public class ModEvents {
     public static void registerSpawnPlacements(SpawnPlacementRegisterEvent event) {
         event.register(ModEntities.DONUT_BLOB.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, DonutBlob::checkSlimeSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
     }
+
 }
