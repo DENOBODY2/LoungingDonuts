@@ -22,7 +22,11 @@ public class ModForgeEvents {
                         double enemyX = attacker.getDeltaMovement().x;
                         double enemyY = attacker.getDeltaMovement().y;
                         double enemyZ = attacker.getDeltaMovement().z;
-                        attacker.setDeltaMovement((-10*enemyX),(Math.abs(10*enemyY)),(-10*enemyZ));
+                        if(Math.abs(enemyY) < 2.0){
+                            attacker.setDeltaMovement((-10*enemyX),(Math.abs(10*enemyY)),(-10*enemyZ));
+                        }else{
+                            attacker.setDeltaMovement((-10*enemyX),(Math.abs(4*enemyY)),(-10*enemyZ));
+                        }
                     } else if(event.getDamageSource().getDirectEntity() instanceof Projectile projectile){
                         double projectileX = projectile.getDeltaMovement().x;
                         double projectileY = projectile.getDeltaMovement().y;

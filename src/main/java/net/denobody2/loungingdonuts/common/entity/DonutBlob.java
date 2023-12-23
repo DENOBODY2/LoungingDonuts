@@ -68,11 +68,12 @@ public class DonutBlob extends Monster implements GeoEntity {
         this.moveControl = new DonutBlobMoveControl(this);
         this.navigation = new GroundPathNavigation(this, pLevel);
         this.setCombatTask();
+
     }
 
     @Override
     protected void registerGoals() {
-        this.goalSelector.addGoal(1, new RandomStrollGoal(this, 1.0D));
+        this.goalSelector.addGoal(1, new RandomStollJumpGoal(this, 1.0D));
         this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
@@ -81,9 +82,11 @@ public class DonutBlob extends Monster implements GeoEntity {
     }
     public void setCombatTask() {
         if (this.level() != null && !this.level().isClientSide) {
-            this.goalSelector.addGoal(4, this.aiAttackOnCollide);
+            this.goalSelector.addGoal(1, this.aiAttackOnCollide);
         }
+
     }
+
     public static AttributeSupplier.Builder setAttributes(){
         return createMobAttributes()
                 .add(Attributes.ARMOR, 1.5D)
@@ -108,7 +111,7 @@ public class DonutBlob extends Monster implements GeoEntity {
         return true;
     }
     protected int getJumpDelay() {
-        return this.random.nextInt(20) + 20;
+        return this.random.nextInt(20);
     }
 
 
@@ -287,12 +290,7 @@ public class DonutBlob extends Monster implements GeoEntity {
         public void tick() {
             if (this.mob.onGround()) {
                 this.mob.setSpeed((float) (this.speedModifier * this.mob.getAttributeValue(Attributes.MOVEMENT_SPEED)));
-                if (this.jumpDelay-- <= 0 && this.operation != Operation.WAIT) {
-                    this.jumpDelay = this.slime.getJumpDelay();
-                    if (this.mob.getTarget() != null) {
-                        this.jumpDelay /= 3;
-                    }
-
+                if (this.operation != Operation.WAIT) {
                     this.slime.getJumpControl().jump();
                     this.slime.playSound(this.slime.getJumpSound(), this.slime.getSoundVolume(), this.slime.getVoicePitch());
                 } else {
@@ -302,6 +300,18 @@ public class DonutBlob extends Monster implements GeoEntity {
                 }
             }
             super.tick();
+        }
+    }
+    public static class RandomStollJumpGoal extends RandomStrollGoal {
+
+        public RandomStollJumpGoal(PathfinderMob pMob, double pSpeedModifier) {
+            super(pMob, pSpeedModifier);
+            this.setFlags(EnumSet.of(Goal.Flag.JUMP, Goal.Flag.MOVE));
+        }
+
+        @Override
+        public boolean canUse() {
+            return true;
         }
     }
 
