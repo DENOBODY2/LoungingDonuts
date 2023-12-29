@@ -28,6 +28,6 @@ public class DonutShieldItem extends ShieldItem {
         return super.onBlockStartBreak(itemstack, pos, player);
     }
     public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot equipmentSlot) {
-        return equipmentSlot == EquipmentSlot.MAINHAND ? this.donutShieldAttributes : super.getDefaultAttributeModifiers(equipmentSlot);
+        return equipmentSlot == EquipmentSlot.OFFHAND ? this.donutShieldAttributes : super.getDefaultAttributeModifiers(equipmentSlot);
     }
 }
