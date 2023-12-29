@@ -3,7 +3,7 @@
   "type": "minecraft:jigsaw",
 
 
-  "start_pool": "loungingdonuts:donut_ruins/start_pool",
+  "start_pool": "loungingdonuts:deepslate_donut_ruins_rare/start_pool",
 
 
   "size": 1,
@@ -12,18 +12,19 @@
   "max_distance_from_center": 20,
 
 
-  "biomes": "#loungingdonuts:has_structure/donut_ruins",
+  "biomes": "#loungingdonuts:has_structure/deepslate_donut_ruins_rare",
 
 
   "step": "underground_structures",
 
 
   "start_height": {
-    "absolute": -30
+    "absolute": -70
   },
-
-
   "project_start_to_heightmap": "OCEAN_FLOOR_WG",
+
+
+
 
 
   "use_expansion_hack": false,

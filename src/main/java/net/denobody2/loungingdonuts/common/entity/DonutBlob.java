@@ -73,7 +73,7 @@ public class DonutBlob extends Monster implements GeoEntity {
 
     @Override
     protected void registerGoals() {
-        this.goalSelector.addGoal(1, new RandomStollJumpGoal(this, 1.0D));
+        this.goalSelector.addGoal(2, new RandomStollJumpGoal(this, 1.0D));
         this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
@@ -111,7 +111,7 @@ public class DonutBlob extends Monster implements GeoEntity {
         return true;
     }
     protected int getJumpDelay() {
-        return this.random.nextInt(20);
+        return this.random.nextInt(10)+20;
     }
 
 
@@ -290,13 +290,15 @@ public class DonutBlob extends Monster implements GeoEntity {
         public void tick() {
             if (this.mob.onGround()) {
                 this.mob.setSpeed((float) (this.speedModifier * this.mob.getAttributeValue(Attributes.MOVEMENT_SPEED)));
-                if (this.operation != Operation.WAIT) {
+                if (this.operation != Operation.WAIT && this.jumpDelay <= 0) {
                     this.slime.getJumpControl().jump();
                     this.slime.playSound(this.slime.getJumpSound(), this.slime.getSoundVolume(), this.slime.getVoicePitch());
+                    this.jumpDelay = slime.getJumpDelay();
                 } else {
                     this.slime.xxa = 0.0F;
                     this.slime.zza = 0.0F;
                     this.mob.setSpeed(0.0F);
+                    this.jumpDelay/=3;
                 }
             }
             super.tick();

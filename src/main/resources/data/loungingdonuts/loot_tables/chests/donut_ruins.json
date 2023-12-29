@@ -4,7 +4,7 @@
     {
       "name": "donut_ruins",
       "rolls": {
-        "min": 1,
+        "min": 2,
         "max": 4
       },
       "entries": [

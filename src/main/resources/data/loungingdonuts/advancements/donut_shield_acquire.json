@@ -1,11 +1,12 @@
 {
+  "parent": "loungingdonuts:loungingdonuts",
   "criteria": {
-    "has_donut_pink": {
+    "has_donut_shield": {
       "conditions": {
         "items": [
           {
             "items": [
-              "loungingdonuts:pink_donut"
+              "loungingdonuts:donut_shield"
             ]
           }
         ]
@@ -15,23 +16,22 @@
   },
   "display": {
     "announce_to_chat": true,
-    "background": "loungingdonuts:textures/block/deepslate_donut_ore.png",
     "description": {
-      "text": "Obtain a pink donut!"
+      "text": "Find a Donut Shield in a Rare Donut Ruin. This shield will launch attackers away!"
     },
     "frame": "task",
-    "hidden": false,
+    "hidden": true,
     "icon": {
-      "item": "loungingdonuts:pink_donut"
+      "item": "loungingdonuts:donut_shield"
     },
     "show_toast": true,
     "title": {
-      "text": "Lounging Donuts"
+      "text": "Sweet Basher"
     }
   },
   "requirements": [
     [
-      "has_donut_pink"
+      "has_donut_shield"
     ]
   ],
   "sends_telemetry_event": true
