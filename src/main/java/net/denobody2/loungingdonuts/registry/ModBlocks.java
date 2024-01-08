@@ -25,20 +25,24 @@ public class ModBlocks {
             .sound(SoundType.DEEPSLATE),UniformInt.of(3, 5)));
 
     public static final RegistryObject<Block> PINK_DONUT_BLOCK = registerBlock("pink_donut_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
-            .sound(SoundType.STONE)));
+            .sound(SoundType.STONE)
+            .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BLUE_DONUT_BLOCK = registerBlock("blue_donut_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
-            .sound(SoundType.STONE)));
+            .sound(SoundType.STONE)
+            .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> GOLD_DONUT_BLOCK = registerBlock("gold_donut_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)
             .requiresCorrectToolForDrops()
             .sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> GREEN_DONUT_BLOCK = registerBlock("green_donut_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
-            .sound(SoundType.DEEPSLATE)));
+            .sound(SoundType.DEEPSLATE)
+            .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BLACK_DONUT_BLOCK = registerBlock("black_donut_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
-            .sound(SoundType.DEEPSLATE)));
+            .sound(SoundType.DEEPSLATE)
+            .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> AMETHYST_DONUT_BLOCK = registerBlock("amethyst_donut_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
             .requiresCorrectToolForDrops()
